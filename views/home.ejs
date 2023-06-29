@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<h1>Home</h1>
+<p><%= content %></p>
+<% postList.forEach(function(element) {%>
+    <div>
+        <h3><%=element.title %></h3>
+        <p id="postBody">
+            <%= element.postBody.slice(0,100) %>...
+            <a href="/posts/<%= encodeURIComponent(element.title) %>">
+                Read More
+            </a>
+        </p>
+    </div>
+<% }); %>
+
+<%- include("partials/footer"); -%>
