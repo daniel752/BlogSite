@@ -42,3 +42,15 @@ h3 {
     color: whitesmoke;
     margin-top: 1rem;
 }
+
+#error404 {
+    display: inline-flex;
+    height: 50%;
+    width: 25%;
+    flex-direction: column;
+    -ms-flex-align: center;
+}
+
+#error404 > h1 {
+    font-size: 250px;
+}

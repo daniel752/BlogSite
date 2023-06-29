@@ -86,7 +86,6 @@ app.get("/contact", function(req, res)
   });
 });
 
-const port = 8000;
-app.listen(port, function() {
+app.listen(process.env.port, function() {
   console.log(`Server started on port ${port}`);
 });
